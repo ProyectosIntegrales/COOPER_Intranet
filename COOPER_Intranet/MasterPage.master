@@ -1,0 +1,111 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+<%@ Register src="app_controls/cntrlTopMenu.ascx" tagname="cntrlTopMenu" tagprefix="uc1" %>
+<%@ Register src="app_controls/cntrlLeftSide.ascx" tagname="cntrlLeftSide" tagprefix="uc2" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<%@ Register src="app_controls/cntrlEditor.ascx" tagname="cntrlEditor" tagprefix="uc4" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
+
+    </head>
+<body >
+    <form id="form1" runat="server">
+    <div>  <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+              </asp:ToolkitScriptManager>
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+    <td style="padding-bottom: 5px; width: 150px; padding-left: 10px;" width="150">
+    
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/images/Cooper_Logo.png" 
+            Width="150px" />
+    
+    </td>
+    <td style="padding-right: 20px; padding-left: 20px; width: 80%;" width="80%" 
+            class="header" nowrap="nowrap">
+        <div style="position: absolute; top: 40px; left: 180px">
+        <asp:Label ID="lblWelcome" runat="server"></asp:Label>
+&nbsp;<asp:Label ID="lblFullname" runat="server"></asp:Label> </div>
+                     <div style="position: absolute; right: 180px; width: 100px; text-align: right; top: 40px; text-decoration: none;" class="header"><asp:LinkButton ID="lnbLogin" runat="server" style="text-decoration:none;">Login</asp:LinkButton>
+                          </div>
+        </td>
+   
+    <td align="right" width="150" style="width: 150px; padding-right: 10px; text-align: right;" 
+            valign="bottom">
+    
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/images/Inside Nogales.png" 
+            Width="150px" />
+    
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+    
+        <uc1:cntrlTopMenu ID="cntrlTopMenu1" runat="server" />
+    
+    </td>
+    </tr>
+    <tr>
+    <td colspan="2" style="height: 20px; background-color: #CCCCCC; margin-bottom: 10px; color: #333333; font-size: 12px; font-weight: bold; padding-left: 15px; padding-top: 2px; padding-bottom: 2px;" 
+            nowrap="nowrap">
+    
+        <asp:Label ID="lblSectionTitle" runat="server"></asp:Label>
+        </td>
+    <td style="padding: 0px 5px 0px 15px; height: 20px; background-color: #CCCCCC; margin-bottom: 10px; color: #333333; font-size: 12px; font-weight: bold; text-align: right;" 
+            align="right" nowrap="nowrap" valign="middle" >
+    
+        <asp:ImageButton ID="imbShowEditor" runat="server" ImageAlign="AbsMiddle" 
+            ImageUrl="~/images/Icons/16X16/edit.png" style="display: none" 
+            ClientIDMode="Static" />
+    
+        <asp:Label ID="lblEditing" runat="server" ForeColor="Red" Text="Editar" 
+            Visible="False"></asp:Label>
+&nbsp;<asp:ImageButton ID="imbEnableEdit" runat="server" ImageAlign="Middle" 
+            ImageUrl="~/images/Icons/16X16/edit.png" Visible="False" />
+            <asp:HyperLink ID="hlnHelp" runat="server" Target="_blank"></asp:HyperLink>
+        </td>
+    </tr>
+   
+     </table>
+
+     <table cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px">
+     <tr>
+     <td valign="top" >
+         <uc2:cntrlLeftSide ID="cntrlLeftSide1" runat="server" />
+         </td>
+     <td style="height: 600px; text-align: left; padding-right: 5px; padding-left:5px;" 
+             valign="top" align="left" width="100%">  
+     <asp:UpdatePanel ID="pnlUpdateMain" runat="server">
+     <ContentTemplate>
+
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    
+     <!----------------------------------  Content Here  --------------------------------
+     ''
+     ''
+     ''---------------------------------------------------------------------------------->
+    
+     
+     </asp:ContentPlaceHolder>
+          
+     </ContentTemplate>
+     </asp:UpdatePanel>
+     </td>
+     </tr>
+     </table>
+   
+    </div>
+        
+    <asp:Button ID="btnShowEditor" runat="server" Text="Editor" Visible="False" />
+    <uc4:cntrlEditor ID="cntrlEditor1" runat="server" ClientIDMode="Static" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+        <style type="text/css">
+        
+        h1 { font-size:20px; font-weight:bold; padding-top:0px; }
+        h2 { font-size:14px; font-weight:bold }
+        
+            .style1
+            {
+                
+                height: 79px;
+            }
+        
+        </style>
+	</head>
+	<body>
+	<div style="padding-top:-20px">
+            <img align="right" alt="" src="pinog-thumb.png" class="style1" /></div>
+	    <h1>PI PDF Converter - Procesador de PDF</h1>
+        <br />
+        <h2>
+            Introducción</h2>
+	
+	    <p>
+            La funcionalidad de este programa es de convertir documentos de MS Word y MS 
+            Excel a el formato Adobe PDF automáticamente.</p>
+        <h2>
+            Consideraciones</h2>
+        <p>
+            Para que el PDF Converter funcione, es necesario que la computadora tenga 
+            instalado el paquete de Office en cualquiera de las versiones 2007 ó 2010.</p>
+        <p>
+            La manera en que este programa opera es que se abren las aplicaciones de MS 
+            Office correspondientes de manera oculta o invisible para el usuario para hacer 
+            uso de la funcionalidad de &quot;Save As PDF&quot; de tales aplicaciones.</p>
+        <p>
+            Por esta misma razón no es recomendabe hacer uso de estos dos programas de MS 
+            Office de manera interactiva en la computadora ya que interfiere con la 
+            funcionalidad del PDF Converter. </p>
+        <h2>
+            Funcionamiento</h2>
+        <p>
+            El PDF Converter o Procesador de PDF se debe dejar funcionando en la computadora 
+            y este estará revisando constantemente por lapsos de 10 segundos la carpeta que 
+            se tenga seleccionada y sus subdirectorios.</p>
+        <p>
+            Cuando el programa encuentra un nuevo documento con extensión DOC, DOCX, XLS o 
+            XLSX se abre la aplicación de MS Office correspondiente y se hace la conversión 
+            a PDF utilizando la funcionalidad de dicho programa &quot;Salvar Como&quot; o &quot;Save As&quot; 
+            para crear un nuevo documento del tipo PDF (Portable Document File).</p>
+        <p>
+            El programa permite seleccionar el tipo de documento a convertir y también 
+            permite decidir si la conversión de documentos inicia automáticamente al inicial 
+            el programa.</p>
+        <p>
+            Se guarda un registro de toda la actividad realizada ya sea de forma automática 
+            o la actividad del usuario. Se genera un nuevo archivo del registro de actividad 
+            cada vez que el programa se inicia.</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            Este programa fue diseñado exclusivamente para su utilización en el Sistema de 
+            Control de Documentos de la Intranet de COOPER Nogales.</p>
+	
+	</body>
+</html>

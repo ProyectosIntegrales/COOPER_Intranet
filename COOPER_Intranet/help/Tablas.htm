@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+<link href="../Styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body >
+
+    <table cellpadding="0" cellspacing="0" class="style1" 
+        >
+        <tr>
+            <td valign="bottom">
+                <img alt="" src="../images/Cooper_Logo.jpg" 
+                    style="padding: 0px 5px 5px 5px;" width="150" /></td>
+            <td>&nbsp;
+                </td>
+            <td valign="bottom" style="padding-right: 5px">
+                <img align="right" alt="" src="../images/Inside%20Nogales.png" width="150" /></td>
+        </tr>
+        <tr>
+            <td bgcolor="Black" colspan="3">&nbsp;
+                </td>
+        </tr>
+        <tr>
+            <td bgcolor="#666666" colspan="3">&nbsp;
+                </td>
+        </tr>
+        <tr>
+            <td colspan="3">&nbsp;
+                </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 5px">
+                <h2>Guía de utilización de tablas de datos</h2></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 2px"><br /></td>
+        </tr>
+        <tr>
+          <td colspan="3" style="padding: 5px; margin-right: 10px;"><p>Una tabla de datos es una manera de representar un conjunto de datos en forma de renglones y columnas las cuales pueden ser solo de consulta o también para administrar los registros mostrados. </p>
+            <p>Para explicar la utilización de la administración de los datos usaremos como ejemplo la siguiente tabla de empleados la cual contiene columnas de datos de los tipos más comunes que se pueden presentar en nuestro sistema:</p>
+            <p><img src="images/t01.png" width="600" height="236" alt="Tabla de empleados" /></p>
+            <p>En esta tabla se muestran los datos de los empleados de una empresa común donde la primera columna es el Número del empleado, la segunda es el Nombre, la tercera es el Sexo, en la cuarta se indica si el empleado es del tipo administrativo o no.</p>
+            <p>En la parte superior se muestran los encabezados de las columnas y al extremo derecho tenemos el botón para activar los campos para agregar nuevos registros con el ícono de una crucesita verde <img src="../images/Icons/16X16/add.png" width="16" height="16" />.</p>
+            <p>Como se puede observar, la primera columna sería en este caso un número secuencial generado automáticamente en la entrada de datos.</p>
+            <p>La segunda columna, el nombre del empleado es del tipo texto y es una entrada manual.</p>
+            <p>La tercera columna se trata del tipo de selección múltiple el cual en este caso solo contiene dos valores posibles.</p>
+            <p>La cuatra columna es del tipo booleana (Falso/Verdadero)</p>
+            <p>Además de las columnas de datos, al lado derecho de la tabla se tienes dos botónes los cuales se utilizan para modificar <img src="../images/Icons/16X16/edit.png" width="16" height="16" /> o borrar <img src="../images/Icons/16X16/delete.png" width="16" height="16" /> los registros.</p>
+            <p>Al pie de la tabla se muestran los indicadores de página los cuales nos ayudan a cambiar de página mostrando así en cada una de ellas un conjunto distinto de datos.</p>
+            <h3>Agregando registros</h3>
+            <p>Para agregar registros con el cursor del ratón se hace click en la crucecita verde en el encabezado de la tabla para activar los campos en blanco para agregar nuevos registros. </p>
+            <p><img src="images/t02.png" width="600" height="265" /></p>
+            <p>En esta nueva vista, se muestra un renglón adicional con los elementos para crear nuestro nuevo registro. Para la primera columna no se muestra ninguna indicación ya que este dato será agregado automáticamente por el sistema al aceptar crear el nuevo registro.</p>
+            <p>Para la segunda columna se muestra una caja de texto donde se va a escribir el nombre del empleado. En la tercera columna se muestra una lista de selección en la cual se puede escojere entre las opciones disponibles, en este caso se puede escojer únicamente los datos 'M' o 'F' dependiendo del sexo del empleado. Para la cuarta columna se muestra una caja booleana donde solo si indica si/no según el caso.</p>
+            <p>Al extremo derecho  vemos dos botones representados por los íconos para aceptar <img src="../images/Icons/16X16/apply.png" width="16" height="16" /> o cancelar <img src="../images/Icons/16X16/cancel.png" width="16" height="16" /> esta operación. Al dar click sobre el botón para aceptar, se crea el nuevo registro, se oculta este renglón de campos para agregar y el nuevo registro creado será mostrado al final de la lista de datos. En caso de que desee cancelar la operación solo se ocultará el renglón para agregar datos sin crear el nuevo registro.</p>
+            <h3>Modificando registros</h3>
+            <p>Para modificar un registro existente es necesario hacer click con el cursor del ratón sobre el ícono de modificación <img src="../images/Icons/16X16/edit.png" alt="" width="16" height="16" /> correspondiente al renglón del registro que se desea modificar.</p>
+            <p><img src="images/t03.png" width="600" height="234" /></p>
+            <p>Al igual que al agregar registros, se habilitan los elementos correspondientes para que cada uno de los diferentes tipos de columnas puedan ser modificados. Para la primera columna no se muestra ninguna indicación y solo se muestra el valor actual ya que este dato no puede ser modificado.</p>
+            <p>Para la segunda columna se muestra una caja de texto donde aparecel el nombre del empleado actual o dato existente. En la tercera columna se muestra una lista de selección en la cual se puede escojere entre las opciones disponibles apareciendo seleccionada la opción actual del registro. Para la cuarta columna se muestra una caja booleana que puede modificarse su estado existente.</p>
+            <p>Al extremo derecho del renglón elegido vemos que los dos botones han sido reemplazados por los íconos para aceptar <img src="../images/Icons/16X16/apply.png" alt="" width="16" height="16" /> o cancelar <img src="../images/Icons/16X16/cancel.png" alt="" width="16" height="16" /> esta operación. Al dar click sobre el botón para aceptar, se aplican los cambios al registro, se oculta este renglón de campos para modificar y el registro modificado será mostrado. En caso de que desee cancelar la operación solo se ocultarán del renglón los elementos para modificar datos quedando el registro intacto.</p>
+            <h3>Borrando registros</h3>
+            <p>Para borrar o eliminar un registro existente es necesario hacer click con el cursor del ratón sobre el ícono de la crucesita roja  <img src="../images/Icons/16X16/delete.png" alt="" width="16" height="16" /> correspondiente al renglón del registro que se desea eliminar.</p>
+            <p>En este caso solo aparece una caja de diálogo del sistema para confirmar esta operación donde se debe utilizar el botón según se desee.</p>
+            <p><img src="images/t04.png" width="600" height="236" /></p>
+            <p>Al aceptar esta operación es registro se borrará de la tabla y la vista de la tabla se actualizará con el conjunto de datos nuevo. <strong>Esta operación no es reversible en ninguno de los casos en cuanto administración de tablas de datos.</strong></p>
+            <p>&nbsp;</p></td>
+        </tr>
+    </table>
+
+</body>
+</html>
